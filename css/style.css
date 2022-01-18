@@ -1,0 +1,310 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  
+}
+p {
+  text-align: center;
+  line-height: 200%;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: xx-large;
+  margin: 30px;
+  text-align: center;
+}
+
+h2{
+  font-size: x-large;
+  margin: 30px;
+  text-align: left;
+}
+
+/* HEADER */
+
+.topnav {
+  overflow: hidden;
+  background-color: #545454;
+  display: flex;
+  justify-content: center;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #84DD75;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196f3;
+  color: white;
+}
+
+.topnav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav{
+    display: flex;
+    flex-direction: column;
+  }
+  .topnav a,
+  .topnav input[type="text"],
+  .topnav input[type="text"] {
+    border: 1px solid #ccc;
+  }
+}
+
+@media screen and (max-width: 800px){
+  #videoBG{
+    max-width: auto;
+    height: auto;
+  }
+  .containerB-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .exp-pro { 
+    margin: 40px;
+  }
+  .diplome { 
+    margin: 40px;
+  }
+  
+}
+
+/* MAIN */
+
+
+
+
+.containerA {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  
+
+}
+
+.containerA-1{
+  display: flex;
+  justify-content: center;
+}
+#logo-oli_dev{
+  height: 350px;
+  width: 350px;
+  margin: 40px;
+}
+
+.containerA-2 {
+  text-align: center;
+  padding: 40px;
+}
+
+.container3 {
+  background-color: royalblue;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+/* Img aperçu */
+#cv {
+  width: 60%;
+  align-items: center;
+}
+
+#myImg {
+  width: 200px;
+  height: 150px;
+  clip-path: ellipse(40% 50%);
+  padding: 20px;
+}
+#body-presentation{
+  background: linear-gradient(to bottom right, #84DD75, white, #545454);
+}
+.containerB-1{
+  margin: 40px;
+}
+
+.containerB-2 {
+  display: flex;
+  justify-content: space-between;
+  }
+.exp-pro { 
+  margin: 40px;
+}
+.diplome { 
+  margin: 40px;
+}
+
+.bloc{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  
+}
+.bloc video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -100;
+}
+
+.txt-presentation{
+  font-size: 20px;
+  line-height: 450%;
+  
+}
+.project1 {
+  background-color: rgb(225, 65, 190);
+  display: flex;
+  justify-content: center;
+}
+.project2 {
+  background-color: rgb(81, 65, 225);
+  display: flex;
+  justify-content: center;
+}
+.project3 {
+  background-color: rgb(116, 225, 65);
+  display: flex;
+  justify-content: center;
+}
+
+/* FOOTER */
+
+.container-f{
+  max-width: 1170px;
+  margin: auto;
+  text-align: center; 
+  width: 100%;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+
+.footer{
+  background-color: #545454;
+  padding: 20px 0;
+  margin: auto;
+  
+  
+}
+
+.footer1{
+  width: 25%;
+  padding: 0 15px;
+  
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer1 h4{
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+
+}
+
+.footer1 h4::before{
+  content: '';
+  position: absolute;
+  left: -29px;
+  bottom: -15px;
+  background-color: #84DD63;
+  height: 3px;
+  box-sizing: border-box;
+  width: 200px;
+  margin-left: 50px;
+}
+
+
+
+.footer1 .s-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer1 .s-links a:hover{
+  color: #1c51d6;
+  background-color: #84DD63;
+}
+
+#button-newsletter{
+  clip-path: ellipse(30% 30%);
+  height: 80px;
+  width: 80px;
+  color: white;
+  background-color: rgba(255,255,255,0.2);
+}
+
+#button-newsletter a:hover{
+  color: #1c51d6;
+  background-color: #84DD63;
+}
+
+.pfooter{
+
+  color: white;
+  text-align: left;
+}
+
+.pfooter1{
+  color: white;
+}
+
+/*FIN FOOTER*/

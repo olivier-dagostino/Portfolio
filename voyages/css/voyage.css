@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 20%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+.boite1{
+    width: 1440px;
+    height: 600px;
+    background-color: black;
+    background: url(bande1.png);
+}
+
+
+/*Footer*/
+
+
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+    text-align: center; 
+    width: 100%;
+    margin-left: 250px; 
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+
+.footer{
+    background-color: #24262b;
+    padding: 20px 0;
+    margin: auto;
+    
+    
+}
+
+.footer1{
+    width: 25%;
+    padding: 0 15px;
+    
+}
+
+.footer1 h4{
+
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+  
+}
+
+.footer1 h4::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -15px;
+    background-color: #8894b8;
+    height: 2px;
+    box-sizing: border-box;
+    width: 200px;
+    margin-left: 50px;
+}
+
+
+
+.footer1 .s-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer1 .s-links a:hover{
+    color: #193270;
+    background-color: #ffffff;
+
+}
+
+.pfooter{
+
+    color: white;
+    text-align: left;
+}
+
+.pfooter1{
+    color: white;
+}
+
+/*Fin Footer*/
+
+

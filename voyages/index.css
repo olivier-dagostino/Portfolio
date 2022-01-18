@@ -1,0 +1,1094 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+body {
+    font-family: 'Indie Flower', cursive;
+}
+/* Body */
+
+    /* Header */
+
+   /* Nav */
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    width: auto;
+    margin: 0 auto;
+    background-color: rgb(10, 25, 87);
+    position: sticky;
+    top: 0px;
+}
+
+.conteneur-nav{
+    position: absolute;
+    width: 100%;
+}
+nav input[type=checkbox]{
+    display: none;
+}
+nav label{
+    display: inline-block;
+    width: auto;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.516);
+}
+nav ul{
+    display: none;
+    list-style-type: none;
+    background-color: #555;
+}
+nav input[type=checkbox]:checked + ul{
+    display: flex;
+    flex-flow : column wrap;
+}
+nav ul li{
+    flex: 1 1 auto;
+    text-align: center;
+}
+nav > div > ul > li > a{
+    color: rgba(128, 128, 128, 0.516);
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+}
+.sous{
+    display: flex;
+    flex-flow: column wrap;
+    z-index: 1000;
+}
+
+.sous li{
+    flex: 1 1 auto;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    background-color: RGBa(200,200,200,0.8);
+}
+
+@media screen and (min-width: 980px){
+    .conteneur-nav{
+        position: static;
+    }
+    nav label, nav input{
+        display: none;
+    }
+    nav input[type=checkbox]:checked + ul, nav ul{
+        display: flex;
+        flex-flow: row wrap;
+        background-color: #babd8D;
+    }
+    nav ul li{
+        position: relative;
+    }
+    nav > div > ul > li > a{
+        color: black;
+    }
+    nav a{
+        border-bottom: 2px solid transparent;
+    }
+    nav a:hover{
+        color: rgb(145, 95, 2);
+        border-bottom: 2px solid gold;
+    }
+    .sous{
+        display: none;
+        box-shadow: 0px 1px 2px #CCC;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+    }
+    nav > div > ul li:hover .sous{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .sous a{
+        border-bottom: none;
+        background-color: white;
+    }
+    .sous a:hover{
+        border-bottom: none;
+        background-color: RGBa(200,200,200,0.1);
+    }
+    .deroulant > a::after{
+        content:" ▼";
+        font-size: 12px;
+    }
+}
+
+.boite1{
+    width: auto;
+    height: auto;
+    background-image: url(img/bande1.png);
+  
+}
+
+.Texte{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.conteneur{
+    display: flex;
+}
+.centerBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin-left: 287px;
+  background-color: #b0f2b6;
+  width: 25%;
+  margin-top: 50px;
+  margin-right: -50px;
+  border-radius: 5%;
+  
+}
+.centerBox4 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 300px;
+  margin-left: 200px;
+  background-color: #b0f2b6;
+  width: 25%;
+  margin-top: 50px;
+  border-radius: 5%;
+ 
+}
+
+h1{
+    text-align: center;
+}
+
+.Accueil{
+    height: 300px;
+    width: 460px;
+    background: url("http://ohlookawebsite.com/bathroomtestfull.jpg") no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5%;
+}
+.Accueil:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #a29ca9;
+    background: -moz-linear-gradient(-45deg, #a29ca9 0%, #95909b 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #a29ca9 0%,#95909b 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #a29ca9 0%,#95909b 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', endColorstr='#95909b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  content: '';
+  opacity: 0;
+    -webkit-transition: opacity 0.9s ease 0s; 
+    border-radius: 5%;
+}
+.Accueil:hover:after{
+    opacity: 0.4;
+}
+  .Accueil h1{
+    color:white;
+    font-size: 50px;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.15s ease 0s; 
+    position: relative;
+    z-index: 10;
+} 
+  .Accueil:hover h1{
+    transform: translateY(-10px);
+  }
+  .Accueil button{
+    position: absolute;
+    transform: translatey(60px);
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+    color:white;
+    width: 250px;
+    height:50px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    z-index: 10;
+  }
+  .Accueil button span{
+    display: block;
+    position: relative;
+    line-height: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .Accueil button > span:after{
+    content:'';
+    position: absolute;
+    top:0;
+    left: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-left: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+  .Accueil:hover button > span:after{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  } 
+  .Accueil button > span:before{
+    content:'';
+    position: absolute;
+    top:0;
+    right: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-right: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  } 
+  .Accueil:hover button > span:before{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+  .Accueil button > span > span:before{
+    content:'';
+    position: absolute;
+    bottom:0;
+    right: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+  }  
+  .Accueil :hover button > span > span:before{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }  
+  .Accueil button > span > span:after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+  }  
+  .Accueil:hover button > span > span:after{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  } 
+  .Accueil button > span > span > span{
+    transition: color 0.15s ease-out 0.3s;
+    color: transparent;
+  } 
+  .Accueil:hover button > span > span > span{
+    color:white;
+  }  
+  .Accueil button > span > span > span:after{
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;
+    color:#1f2e4d;
+    content: attr(data-attr-span);
+    width: 0%;
+    height: 100%;
+    background:white;
+    white-space: nowrap;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: width 0.2s;
+  }  
+  .Accueil button:hover > span > span > span:after{
+    width: auto;
+  }
+
+  .Présentation{
+    height: 300px;
+    width: 460px;
+    background: url("http://ohlookawebsite.com/bathroomtestfull.jpg") no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Présentation:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #a29ca9;
+    background: -moz-linear-gradient(-45deg, #a29ca9 0%, #95909b 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #a29ca9 0%,#95909b 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #a29ca9 0%,#95909b 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', endColorstr='#95909b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  content: '';
+  opacity: 0;
+    -webkit-transition: opacity 0.9s ease 0s; 
+    border-radius: 5%;
+}
+.Présentation:hover:after{
+    opacity: 0.4;
+}
+  .Présentation h1{
+    color:white;
+    font-size: 50px;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.15s ease 0s; 
+    position: relative;
+    z-index: 10;
+}
+  .Présentation:hover h1{
+    transform: translateY(-10px);
+}
+  .Présentation button{
+    position: absolute;
+    transform: translatey(60px);
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+    color:white;
+    width: 250px;
+    height:50px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    z-index: 10;
+    
+}
+  .Présentation button span{
+    display: block;
+    position: relative;
+    line-height: 50px;
+    height: 50px;
+    cursor: pointer;
+    
+} 
+  .Présentation button > span:after{
+    content:'';
+    position: absolute;
+    top:0;
+    left: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-left: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}
+  .Présentation:hover button > span:after{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}  
+  .Présentation button > span:before{
+    content:'';
+    position: absolute;
+    top:0;
+    right: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-right: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}  
+  .Présentation:hover button > span:before{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+  .Présentation button > span > span:before{
+    content:'';
+    position: absolute;
+    bottom:0;
+    right: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+}  
+  .Présentation :hover button > span > span:before{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+}  
+  .Présentation button > span > span:after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+} 
+  .Présentation:hover button > span > span:after{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+}  
+  .Présentation button > span > span > span{
+    transition: color 0.15s ease-out 0.3s;
+    color: transparent;
+}  
+  .Présentation:hover button > span > span > span{
+    color:white;
+} 
+  .Présentation button > span > span > span:after{
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;
+    color:#1f2e4d;
+    content: attr(data-attr-span);
+    width: 0%;
+    height: 100%;
+    background:white;
+    white-space: nowrap;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: width 0.2s;
+}  
+  .Présentation button:hover > span > span > span:after{
+    width: 100%;
+}
+
+/*Fin de boite Plantes*/
+
+/*Debut boites Fleurs*/
+.Destination{
+    height: 300px;
+    width: 460px;
+    background: url("http://ohlookawebsite.com/bathroomtestfull.jpg") no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Destination:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #a29ca9;
+    background: -moz-linear-gradient(-45deg, #a29ca9 0%, #95909b 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #a29ca9 0%,#95909b 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #a29ca9 0%,#95909b 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', endColorstr='#95909b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  content: '';
+  opacity: 0;
+    -webkit-transition: opacity 0.9s ease 0s; 
+    border-radius: 5%;
+}
+.Destination:hover:after{
+    opacity: 0.4;
+}  
+  .Destination h1{
+    color:white;
+    font-size: 50px;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.15s ease 0s; 
+    position: relative;
+    z-index: 10;
+} 
+  .Destination:hover h1{
+    transform: translateY(-10px);
+}
+  .Destination button{
+    position: absolute;
+    transform: translatey(60px);
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+    color:white;
+    width: 250px;
+    height:50px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    z-index: 10;
+}
+  .Destination button span{
+    display: block;
+    position: relative;
+    line-height: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+  .Destination button > span:after{
+    content:'';
+    position: absolute;
+    top:0;
+    left: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-left: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}
+  .Destination:hover button > span:after{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}  
+  .Destination button > span:before{
+    content:'';
+    position: absolute;
+    top:0;
+    right: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-right: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}  
+  .Destination:hover button > span:before{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+.Destination button > span > span:before{
+    content:'';
+    position: absolute;
+    bottom:0;
+    right: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+}
+.Destination :hover button > span > span:before{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+}  
+  .Destination button > span > span:after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+  }  
+  .Destination:hover button > span > span:after{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }  
+  .Destination button > span > span > span{
+    transition: color 0.15s ease-out 0.3s;
+    color: transparent;
+  }  
+  .Destination:hover button > span > span > span{
+    color:white;
+  }  
+  .Destination button > span > span > span:after{
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;
+    color:#1f2e4d;
+    content: attr(data-attr-span);
+    width: 0%;
+    height: 100%;
+    background:white;
+    white-space: nowrap;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: width 0.2s;
+  } 
+  .Destination button:hover > span > span > span:after{
+    width: 100%;
+  }
+
+/*Fin de boite Fleurs*/
+
+/*Contient les boites*/
+
+.conteneur1{
+    display: flex;
+    margin-bottom: 40px;
+}
+.centerBox1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-left: 287px;
+    background-color: #b0f2b6;
+    width: 25%;
+    margin-top: 50px;
+    margin-right: -50px;
+    border-radius: 5%;
+    
+}
+.centerBox2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 300px;
+    margin-left: 200px;
+    background-color: #b0f2b6;
+    width: 25%;
+    margin-top: 50px;
+    border-radius: 5%;
+   
+}
+
+/*Fin de contient les boites*/
+
+/*Debut boite Arbustes*/
+
+.Propos{
+    height: 300px;
+    width: 460px;
+    background: url("http://ohlookawebsite.com/bathroomtestfull.jpg") no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+
+.Propos:hover:after{
+    opacity: 0.4;
+}  
+  .Propos h1{
+    color:white;
+    font-size: 50px;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.15s ease 0s; 
+    position: relative;
+    z-index: 10;
+} 
+  .Propos:hover h1{
+    transform: translateY(-10px);
+}
+  .Propos button{
+    position: absolute;
+    transform: translatey(60px);
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+    color:white;
+    width: 250px;
+    height:50px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    z-index: 10;
+}
+  .Propos button span{
+    display: block;
+    position: relative;
+    line-height: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+  .Propos button > span:after{
+    content:'';
+    position: absolute;
+    top:0;
+    left: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-left: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}
+  .Propos:hover button > span:after{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+  .Propos button > span:before{
+    content:'';
+    position: absolute;
+    top:0;
+    right: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-right: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+} 
+  .Propos:hover button > span:before{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+  .Propos button > span > span:before{
+    content:'';
+    position: absolute;
+    bottom:0;
+    right: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+} 
+  .Propos :hover button > span > span:before{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+} 
+  .Propos button > span > span:after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+}
+  .Propos:hover button > span > span:after{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+}
+  .Propos button > span > span > span{
+    transition: color 0.15s ease-out 0.3s;
+    color: transparent;
+} 
+  .Propos:hover button > span > span > span{
+    color:white;
+} 
+  .Propos button > span > span > span:after{
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;
+    color:#1f2e4d;
+    content: attr(data-attr-span);
+    width: 0%;
+    height: 100%;
+    background:white;
+    white-space: nowrap;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: width 0.2s;
+} 
+  .Propos button:hover > span > span > span:after{
+    width: 100%;
+
+}
+
+/*Fin de boite Arbustes*/
+
+/*Debut boites Legumes*/
+
+.Contact{
+    height: 300px;
+    width: 460px;
+    background: url("http://ohlookawebsite.com/bathroomtestfull.jpg") no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.Contact:hover:after{
+    opacity: 0.4;
+} 
+.Contact h1{
+    color:white;
+    font-size: 50px;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.15s ease 0s; 
+    position: relative;
+    z-index: 10;
+}
+.Contact:hover h1{
+    transform: translateY(-10px);
+  }
+  .Contact button{
+    position: absolute;
+    transform: translatey(60px);
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+    color:white;
+    width: 250px;
+    height:50px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    z-index: 10;
+  }
+  .Contact button span{
+    display: block;
+    position: relative;
+    line-height: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .Contact button > span:after{
+    content:'';
+    position: absolute;
+    top:0;
+    left: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-left: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+  .Contact:hover button > span:after{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  } 
+  .Contact button > span:before{
+    content:'';
+    position: absolute;
+    top:0;
+    right: 50%;
+    width: 20px;
+    height: 0;
+    
+    border: 1px solid white;
+    border-right: none;
+    border-bottom: none;
+    
+        transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+  .Contact:hover button > span:before{
+    width: calc(50% - 1px);
+    height: calc(100% - 2px);
+    transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+  .Contact button > span > span:before{
+    content:'';
+    position: absolute;
+    bottom:0;
+    right: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+  }
+  .Contact :hover button > span > span:before{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+  .Contact button > span > span:after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left: 0%;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    
+  }
+  .Contact:hover button > span > span:after{
+    opacity: 1;
+    border-bottom: 1px solid white;
+    width: calc(50%);
+    height: 1px;
+    transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+  .Contact button > span > span > span{
+    transition: color 0.15s ease-out 0.3s;
+    color: transparent;
+  }
+  .Contact:hover button > span > span > span{
+    color:white;
+  }
+  .Contact button > span > span > span:after{
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;
+    color:#1f2e4d;
+    content: attr(data-attr-span);
+    width: 0%;
+    height: 100%;
+    background:white;
+    white-space: nowrap;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: width 0.2s;
+  }
+  .Contact button:hover > span > span > span:after{
+    width: 100%;
+  }
+  a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .0);
+    
+}
+a:hover {
+    color: white;
+}
+a:active{
+    color: white;
+}
+
+
+  
+
+
+
+
+/*Footer*/
+.container{
+  max-width: 1170px;
+  margin: auto;
+  text-align: center; 
+  width: 100%;
+  margin-left: 250px; 
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+
+.footer{
+  background-color: #24262b;
+  padding: 20px 0;
+  margin: auto;
+  
+  
+}
+
+.footer1{
+  width: 25%;
+  padding: 0 15px;
+  
+}
+
+.footer1 h4{
+
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+
+}
+
+.footer1 h4::before{
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: -15px;
+  background-color: #8894b8;
+  height: 2px;
+  box-sizing: border-box;
+  width: 200px;
+  margin-left: 50px;
+}
+
+
+
+.footer1 .s-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer1 .s-links a:hover{
+  color: #193270;
+  background-color: #ffffff;
+
+}
+
+.pfooter{
+
+  color: white;
+  text-align: left;
+}
+
+.pfooter1{
+  color: white;
+}
+
+/*FIN FOOTER*/

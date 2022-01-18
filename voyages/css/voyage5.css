@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+body {
+    font-family: 'Indie Flower', cursive;
+}
+/* Body */
+
+    /* Header */
+
+    /* Nav */
+   /* Nav */
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    width: auto;
+    margin: 0 auto;
+    background-color: rgb(10, 25, 87);
+    position: sticky;
+    top: 0px;
+}
+
+.conteneur-nav{
+    position: absolute;
+    width: auto;
+}
+nav input[type=checkbox]{
+    display: none;
+}
+nav label{
+    display: inline-block;
+    width: auto;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.516);
+}
+nav ul{
+    display: none;
+    list-style-type: none;
+    background-color: #555;
+}
+nav input[type=checkbox]:checked + ul{
+    display: flex;
+    flex-flow : column wrap;
+}
+nav ul li{
+    flex: 1 1 auto;
+    text-align: center;
+}
+nav > div > ul > li > a{
+    color: rgba(128, 128, 128, 0.516);
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+}
+.sous{
+    display: flex;
+    flex-flow: column wrap;
+    z-index: 1000;
+}
+
+.sous li{
+    flex: 1 1 auto;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    background-color: RGBa(200,200,200,0.8);
+}
+
+@media screen and (min-width: 980px){
+
+  .conteneur-nav{
+    position: static;
+}
+nav label, nav input{
+    display: none;
+}
+nav input[type=checkbox]:checked + ul, nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #babd8D;
+}
+nav ul li{
+    position: relative;
+}
+nav > div > ul > li > a{
+    color: black;
+}
+nav a{
+    border-bottom: 2px solid transparent;
+}
+nav a:hover{
+    color: rgb(145, 95, 2);
+    border-bottom: 2px solid gold;
+}
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+}
+nav > div > ul li:hover .sous{
+    display: flex;
+    flex-flow: column wrap;
+}
+.sous a{
+    border-bottom: none;
+    background-color: white;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+}
+
+.boite1 {
+    background-image: url(../img/bande1.png);
+}
+        
+/* fin header */       
+
+
+
+/*DEBUT DU MAIN*/
+
+.background{
+    background-image: url(../img/S0background.jpg);
+}
+
+
+#Scontainer1 {
+    display: flex;
+}
+
+.Slien{
+
+margin-left: 60px;
+text-decoration: underline grey;
+font-size: 30px;
+color: grey;
+font-style: italic;
+}
+
+#pict1{
+    width: 50vh;
+    height: 40vh;
+    padding: 30px;
+    border-radius: 20% 20% 20% 20%;
+    
+}
+#pict2{
+    width: 60vh;
+    height: 40vh;
+    padding: 30px;
+    border-radius: 20% 20% 20% 20%;
+}
+#pict3{
+    width: 50vh;
+    height: 40vh;
+    padding: 30px;
+    border-radius: 20% 20% 20% 20%;
+}
+
+#Scontainer3 {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 200px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Cambria, serif;
+}
+
+.paragraphe {
+    
+    text-align: center;
+    color: rgb(26, 22, 65);
+    font-size: 20px;
+    text-shadow: rgb(217, 219, 236) 1px 1px 1px;
+}
+#Scontainer4 {
+    display: flex;
+    justify-content: flex-end;
+   
+}
+#pict4{
+    border-radius: 20% 20% 20% 20%;
+    height: 60vh;
+    margin-bottom: 90px;
+    margin-top: 80px;
+    margin-right: 370px;
+  
+}
+
+/*FIN DU MAIN*/
+
+ /* DEBUT BOUTON*/
+
+ .prem{
+  height: 50px;
+  color: white;
+  background-color: #4a4e69;
+  margin-bottom: 15px;
+  border-radius: 40%;
+  margin-left:45%;
+
+}
+
+h1{
+  text-align: center;
+}
+/*FIN BOUTON*/
+
+
+/*DEBUT FOOTER VOYAGE*/
+.container{
+    max-width: 1170px;
+    margin: auto;
+    text-align: center; 
+    width: 100%;
+    margin-left: 250px; 
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+
+.footer{
+    background-color: #24262b;
+    padding: 20px 0;
+    margin: auto;
+    
+    
+}
+
+.footer1{
+    width: 25%;
+    padding: 0 15px;
+    
+}
+
+.footer1 h4{
+
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+  
+}
+
+.footer1 h4::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -15px;
+    background-color: #8894b8;
+    height: 2px;
+    box-sizing: border-box;
+    width: 200px;
+    margin-left: 50px;
+}
+
+
+
+.footer1 .s-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer1 .s-links a:hover{
+    color: #193270;
+    background-color: #ffffff;
+
+}
+
+.pfooter{
+
+    color: white;
+    text-align: left;
+}
+
+.pfooter1{
+    color: white;
+}
+
+/*FIN FOOTER*/

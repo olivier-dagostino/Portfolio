@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+body {
+    font-family: 'Indie Flower', cursive;
+}
+/* Body */
+
+    /* Header */
+   /* Nav */
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    width: auto;
+    margin: 0 auto;
+    background-color: rgb(10, 25, 87);
+    position: sticky;
+    top: 0px;
+}
+
+.conteneur-nav{
+    position: absolute;
+    width: auto;
+}
+nav input[type=checkbox]{
+    display: none;
+}
+nav label{
+    display: inline-block;
+    width: auto;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.516);
+}
+nav ul{
+    display: none;
+    list-style-type: none;
+    background-color: #555;
+}
+nav input[type=checkbox]:checked + ul{
+    display: flex;
+    flex-flow : column wrap;
+}
+nav ul li{
+    flex: 1 1 auto;
+    text-align: center;
+}
+nav > div > ul > li > a{
+    color: rgba(128, 128, 128, 0.516);
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+}
+.sous{
+    display: flex;
+    flex-flow: column wrap;
+    z-index: 1000;
+}
+
+.sous li{
+    flex: 1 1 auto;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    background-color: RGBa(200,200,200,0.8);
+}
+
+@media screen and (min-width: 980px){
+    .conteneur-nav{
+        position: static;
+    }
+    nav label, nav input{
+        display: none;
+    }
+    nav input[type=checkbox]:checked + ul, nav ul{
+        display: flex;
+        flex-flow: row wrap;
+        background-color: #babd8D;
+    }
+    nav ul li{
+        position: relative;
+    }
+    nav > div > ul > li > a{
+        color: black;
+    }
+    nav a{
+        border-bottom: 2px solid transparent;
+    }
+    nav a:hover{
+        color: rgb(145, 95, 2);
+        border-bottom: 2px solid gold;
+    }
+    .sous{
+        display: none;
+        box-shadow: 0px 1px 2px #CCC;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+    }
+    nav > div > ul li:hover .sous{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .sous a{
+        border-bottom: none;
+        background-color: white;
+    }
+    .sous a:hover{
+        border-bottom: none;
+        background-color: RGBa(200,200,200,0.1);
+    }
+    .deroulant > a::after{
+        content:" ▼";
+        font-size: 12px;
+    }
+}
+
+.boite1 {
+    background-image: url(../img/bande1.png);
+}
+        
+/* fin header */       
+
+
+
+
+/*DEBUT DU MAIN*/
+
+#abc {
+  background-color: rgb(19, 17, 17);
+  font-size: 12px;
+}
+
+#abc, button, input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.background {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.contact{
+    font-size: 30px;
+    color: #e5e90f;
+    margin-left: 30%;
+}
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #e5e90f;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: #e5e90f;
+}
+
+/*FIN DU MAIN*/
+
+/*DEBUT FOOTER VOYAGE*/
+
+
+.conta1{
+  max-width: 1170px;
+  margin: auto;
+  text-align: center; 
+  width: 100%;
+  margin-left: 250px; 
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+
+.footer{
+  background-color: #24262b;
+  padding: 20px 0;
+  margin: auto;
+  
+  
+}
+
+.footer1{
+  width: 25%;
+  padding: 0 15px;
+  
+}
+
+.footer1 h4{
+
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+
+}
+
+.footer1 h4::before{
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: -15px;
+  background-color: #8894b8;
+  height: 2px;
+  box-sizing: border-box;
+  width: 200px;
+  margin-left: 50px;
+}
+
+
+
+.footer1 .s-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer1 .s-links a:hover{
+  color: #193270;
+  background-color: #ffffff;
+
+}
+
+.pfooter{
+
+  color: white;
+  text-align: left;
+}
+
+.pfooter1{
+  color: white;
+}
+
+/*FIN FOOTER*/
