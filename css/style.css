@@ -24,65 +24,133 @@ h2{
   text-align: left;
 }
 
-/* HEADER */
-
-.topnav {
-  overflow: hidden;
-  background-color: #545454;
-  display: flex;
-  justify-content: center;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: white;
+h3{
+  margin: 10px 0px 30px 0px;
+  color: #fff;
+  border-bottom: 3px solid #84DD63;
+  width: 200px;
+  line-height: 46px;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  
 }
 
-.topnav a:hover {
-  background-color: #84DD75;
-  color: black;
+/* header */
+
+nav 
+{
+    width: 100%;
+    background-color: #545454;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
 }
 
-.topnav a.active {
-  background-color: #2196f3;
-  color: white;
+nav > ul
+{
+    margin: 0px;
+    padding: 0px;
 }
 
-.topnav input[type="text"] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
+nav li 
+{
+    list-style-type: none;
+    padding-left: 0px;
 }
 
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
+nav > ul > li
+{
+    float: left;
+    position: relative;
 }
 
-.topnav .search-container button:hover {
-  background: #ccc;
+nav > ul::after
+{
+    content: "";
+    display: table;
+    clear: both;
 }
+
+nav input[type=checkbox]
+{
+    display: none;
+}
+
+nav label
+{
+    display: none;
+}
+
+nav a 
+{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav > ul > li > a 
+{
+    padding: 0px 0px;
+    color: #fff;
+    margin: 20px 20px 20px 20px;
+}
+nav > ul > li > a:hover
+{
+    padding: 0px 0px;
+    color: #84DD63;
+    margin: 20px 20px 20px 20px;
+}
+
+
+nav input[type=checkbox]:checked ~ ul
+{
+    display: block;
+}
+
+@media screen and (max-width : 780px)
+{
+  .menu-mobile
+  {
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+  }
+ 
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul
+  {
+      display: none;
+      text-align: center;
+  }
+  
+  nav ul li, nav ul li a
+  {
+      width: 100%;
+      text-align: center;
+  }
+
+  nav ul li, nav ul li:hover a
+  {
+      padding: 10px 0px;
+      text-align: center;
+  }
+
+  
+}
+     
 
 @media screen and (max-width: 800px) {
-  .topnav{
+  .nav{
     display: flex;
     flex-direction: column;
   }
-  .topnav a,
-  .topnav input[type="text"],
-  .topnav input[type="text"] {
+  .nav a,
+  .nav input[type="text"],
+  .nav input[type="text"] {
     border: 1px solid #ccc;
   }
 }
@@ -91,14 +159,22 @@ h2{
   #videoBG{
     max-width: auto;
     height: auto;
+    z-index: -100;
   }
+
+  #logo-oli_dev{
+    display: none;
+  }
+
   .containerB-2 {
     display: flex;
     flex-wrap: wrap;
   }
+
   .exp-pro { 
     margin: 40px;
   }
+  
   .diplome { 
     margin: 40px;
   }
@@ -127,7 +203,6 @@ h2{
 #logo-oli_dev{
   height: 350px;
   width: 350px;
-  margin: 40px;
 }
 
 .containerA-2 {
@@ -189,8 +264,8 @@ h2{
 
 .txt-presentation{
   font-size: 20px;
-  line-height: 450%;
-  
+  line-height: 250%;
+  color: #fff;
 }
 .project1 {
   background-color: rgb(225, 65, 190);
@@ -210,63 +285,30 @@ h2{
 
 /* FOOTER */
 
-.container-f{
-  max-width: 1170px;
+.footer {
   margin: auto;
-  text-align: center; 
-  width: 100%;
-}
-
-.row{
-  display: flex;
-  justify-content: space-between;
- 
-}
-
-
-.footer{
   background-color: #545454;
-  padding: 20px 0;
-  margin: auto;
-  
-  
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .footer1{
-  width: 25%;
-  padding: 0 15px;
-  
+  text-align: center;
+  line-height: 200%;
 }
+
 .footer a {
   text-decoration: none;
   color: white;
 }
 
-.footer1 h4{
-  color: #ffffff;
-  text-transform: capitalize;
-  margin-bottom: 35px;
-  font-weight: 500;
-  position: relative;
-  text-align: center;
-
+.footer a:hover
+{
+  color: #84DD63;
 }
 
-.footer1 h4::before{
-  content: '';
-  position: absolute;
-  left: -29px;
-  bottom: -15px;
-  background-color: #84DD63;
-  height: 3px;
-  box-sizing: border-box;
-  width: 200px;
-  margin-left: 50px;
-}
-
-
-
-.footer1 .s-links a{
+.footer1 .s-links a {
   display: inline-block;
   height: 40px;
   width: 40px;
@@ -284,27 +326,5 @@ h2{
   background-color: #84DD63;
 }
 
-#button-newsletter{
-  clip-path: ellipse(30% 30%);
-  height: 80px;
-  width: 80px;
-  color: white;
-  background-color: rgba(255,255,255,0.2);
-}
-
-#button-newsletter a:hover{
-  color: #1c51d6;
-  background-color: #84DD63;
-}
-
-.pfooter{
-
-  color: white;
-  text-align: left;
-}
-
-.pfooter1{
-  color: white;
-}
 
 /*FIN FOOTER*/

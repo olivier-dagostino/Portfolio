@@ -14,10 +14,14 @@
 
 <body>
     <header>
-        <div class="topnav">
-            <a href="index.php">Accueil</a>
-            <a href="presentation.php">Présentation</a>
-            <a href="projets.php">Projets</a>
-            <a href="contact.php">Contact</a>
-        </div>
+        <nav>
+            <label for="menu-mobile"class="menu-mobile">Menu</label> <!-- Case à cocher-->
+            <input type="checkbox" id="menu-mobile" role="button">
+            <ul>
+                <li><a href="index.php">Accueil</a><li>
+                <li><a href="presentation.php">Présentation</a></li>
+                <li><a href="projets.php">Projets</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </nav>
     </header>
