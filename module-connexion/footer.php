@@ -5,7 +5,7 @@
                     <div class="footer1">
                         <h4>A propos de nous</h4>
                         <p class="pfooter">
-                            Nous Sommes un Forum de partage sur Café<br>
+                            Nous Sommes un Forum de partage sur le Café<br>
                             ainsi que sur tous ses dérivés.
                         </p>
                     </div>

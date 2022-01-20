@@ -14,13 +14,13 @@
         </div>
         <div class="container_img">
             <div>
-                <img id="img1" src="cafe-turc.png" alt="cafe-turc">
+                <img id="img1" src="img/cafe-turc.png" alt="cafe-turc">
             </div>
             <div>
-                <img id="img2" src="coffee-art.png" alt="coffee-art">
+                <img id="img2" src="img/coffee-art.png" alt="coffee-art">
             </div>
             <div>
-                <img id="img3" src="moulin-cafe.png" alt="moulin-cafe">
+                <img id="img3" src="img/moulin-cafe.png" alt="moulin-cafe">
             </div>
         </div>
 

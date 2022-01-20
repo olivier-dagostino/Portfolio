@@ -298,10 +298,28 @@ nav input[type=checkbox]:checked ~ ul
   line-height: 200%;
 }
 
+.footer2{
+  text-align: center;
+  line-height: 200%;
+}
+
 .footer a {
   text-decoration: none;
   color: white;
 }
+#logo-github{
+  position: relative;
+  top: 0px;
+  left: -44px;
+  
+}
+#logo-linkedin{
+  position: relative;
+  top: -33px;
+  left: 49px;
+  
+}
+
 
 .footer a:hover
 {
