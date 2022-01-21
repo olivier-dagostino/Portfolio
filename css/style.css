@@ -283,6 +283,46 @@ nav input[type=checkbox]:checked ~ ul
   justify-content: center;
 }
 
+.competence{
+  display: flex;
+  flex-direction: column;
+}
+.competence1{
+  display: flex;
+  justify-content: space-evenly;
+}
+.competence2{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+#logo-html-css{
+  height: 100px;
+  width: 180px;
+}
+#logo-github{
+  height: 100px;
+  width: 190px;
+}
+#logo-mysql{
+  height: 140px;
+  width: 150px;
+}
+#logo-php{
+  height: 100px;
+  width: 150px;
+}
+#logo-g-suite{
+  height: 100px;
+  width: 150px;
+}
+#logo-pack-office{
+  height: 100px;
+  width: 230px;
+}
+
 /* FOOTER */
 
 .footer {
