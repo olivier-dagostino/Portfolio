@@ -3,7 +3,6 @@
 <main>
     <div class="containerA">
         <div class="bloc">
-            <video autoplay muted loop id="videoBG" src="img/Tourbillonnantes Étoiles et Espace Vidéo Zoom Virtuel Arrière-plan.mp4"></video>
             <h1>Bienvenue</h1>
             <div class="containerA-1">
                 <img id="logo-oli_dev" src="img/oli_dev (1500 x 1500 px).png" alt="logo-oli_dev">

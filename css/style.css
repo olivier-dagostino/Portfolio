@@ -33,6 +33,10 @@ h3{
   text-align: center;
   
 }
+main{
+  background-image: url('../img/IMG_0047.JPG');
+  background-size: cover;
+}
 
 /* header */
 
