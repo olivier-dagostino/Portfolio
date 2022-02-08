@@ -9,8 +9,8 @@ class Dbh
         try {
 
             $username = "root";
-            $password = "";
-            $dbh = new PDO('mysql:host=localhost; dbname=reservationsalles', $username, $password);
+            $password = "root";
+            $dbh = new PDO('mysql:host=localhost:8889; dbname=reservationsalles', $username, $password);
             return $dbh;
             
         } catch (PDOException $e) {

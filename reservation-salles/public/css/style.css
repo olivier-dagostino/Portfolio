@@ -65,6 +65,8 @@ main
     flex-wrap: wrap;
     align-content:center;
     background-color: #eeb868;
+    min-width: none;
+    min-height: 47vh;
 }
 
 
