@@ -1,9 +1,10 @@
 <?php
 
 session_start();
-$id = $_SESSION["id"];
-$bdd = mysqli_connect("localhost:3306","olivier","moduleconnexion","olivier-d-agostino_moduleconnexion"); 
+$bdd = mysqli_connect("localhost:8889","root","root","moduleconnexion"); 
 
+
+$_SESSION['id'] = $id;
 $req= mysqli_query($bdd,"SELECT * FROM utilisateurS WHERE id = $id");
 
 $res= mysqli_fetch_all($req,MYSQLI_ASSOC);
@@ -34,10 +35,10 @@ if (isset($_POST['env']))
             <input style="font-family: 'Indie Flower', cursive;" id="login" name="login" value="<?php echo $login?>" type="text" placeholder="Username"/>
 
             <label for ="prenom">Prenom</label>
-            <input style="font-family: 'Indie Flower', cursive;" name="prenom" value="<?php echo $prenom?>" type="text" placeholder="Prenom" />
+            <input style="font-family: 'Indie Flower', cursive;" name="prenom" value="<?php echo $prenom ?>" type="text" placeholder="Prenom" />
 
             <label for ="nom">Nom</label>
-            <input style="font-family: 'Indie Flower', cursive;" name="nom" value="<?php echo $nom?>" type="text" placeholder="Nom" />
+            <input style="font-family: 'Indie Flower', cursive;" name="nom" value="<?php echo $nom ?>" type="text" placeholder="Nom" />
 
             <label for ="password">Password</label>
             <input style="font-family: 'Indie Flower', cursive;" name="password" value="<?php echo $password?>" type="password" placeholder="Votre Mot de Passe"/>
