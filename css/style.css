@@ -1,7 +1,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  
 }
 p {
   text-align: center;
@@ -16,139 +15,158 @@ h1 {
   font-size: xx-large;
   margin: 30px;
   text-align: center;
+  color: #fff;
 }
 
-h2{
+h2 {
   font-size: x-large;
   margin: 30px;
   text-align: left;
 }
 
-h3{
+h3 {
   margin: 10px 0px 30px 0px;
   color: #fff;
-  border-bottom: 3px solid #84DD63;
+  border-bottom: 3px solid #84dd63;
   width: 200px;
   line-height: 46px;
   text-align: center;
-  
 }
-main{
-  background-image: url('../img/IMG_0047.JPG');
+main {
+  background-image: url("../img/IMG_0047.JPG");
   background-size: cover;
+  z-index: -1;
 }
 
 /* header */
-
-nav 
-{
-    width: 100%;
-    background-color: #545454;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    z-index: 100;
+header {
+  position: sticky;
+  top: 0;
+  
+  z-index: 1;
+  display: flex;
+  justify-content: center;
 }
 
-nav > ul
-{
-    margin: 0px;
-    padding: 0px;
+nav {
+  width: 100%;
+  background-color: #545454;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
 }
 
-nav li 
-{
-    list-style-type: none;
-    padding-left: 0px;
+nav > ul {
+  margin: 0px;
+  padding: 0px;
 }
 
-nav > ul > li
-{
-    float: left;
-    position: relative;
+nav li {
+  list-style-type: none;
+  padding-left: 0px;
 }
 
-nav > ul::after
-{
-    content: "";
-    display: table;
-    clear: both;
+nav > ul > li {
+  float: left;
+  position: relative;
 }
 
-nav input[type=checkbox]
-{
-    display: none;
+nav > ul::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-nav label
-{
-    display: none;
+nav input[type="checkbox"] {
+  display: none;
 }
 
-nav a 
-{
-    display: inline-block;
-    text-decoration: none;
+nav label {
+  display: none;
 }
 
-nav > ul > li > a 
-{
-    padding: 0px 0px;
-    color: #fff;
-    margin: 20px 20px 20px 20px;
-}
-nav > ul > li > a:hover
-{
-    padding: 0px 0px;
-    color: #84DD63;
-    margin: 20px 20px 20px 20px;
+nav a {
+  display: inline-block;
+  text-decoration: none;
 }
 
+nav > ul > li > a {
+  padding: 0px 0px;
+  color: #fff;
+  margin: 20px 20px 20px 20px;
+}
+nav > ul > li > a:hover {
+  padding: 0px 0px;
+  color: #84dd63;
+  margin: 20px 20px 20px 20px;
+}
 
-nav input[type=checkbox]:checked ~ ul
-{
+nav input[type="checkbox"]:checked ~ ul {
+  display: block;
+}
+
+@media screen and (max-width: 780px) {
+  .menu-mobile {
     display: block;
-}
-
-@media screen and (max-width : 780px)
-{
-  .menu-mobile
-  {
-      display: block;
-      color: #fff;
-      text-align: center;
-      padding: 12px;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
   }
- 
+  header{
+    width: 100%;
+  }
   nav {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-  nav ul
-  {
-      display: none;
-      text-align: center;
+  nav ul {
+    display: none;
+    text-align: center;
   }
-  
-  nav ul li, nav ul li a
-  {
+
+  nav ul li,
+  nav ul li a {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li,
+  nav ul li:hover a {
+    padding: 10px 0px;
+    text-align: center;
+  }
+  header{
+    position: sticky;
+      top: 0;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
       width: 100%;
-      text-align: center;
-  }
-
-  nav ul li, nav ul li:hover a
-  {
-      padding: 10px 0px;
-      text-align: center;
-  }
-
+    }
+  
+    .competence{
+      display: flex;
+      flex-direction: column;
+    }
+    .competence1{
+      display: flex;
+      flex-direction: column;
+    }
+    .competence2{
+      display: flex;
+      flex-direction: column;
+    }
+    .competence3{
+      display: flex;
+      flex-direction: column;
+    }
   
 }
-     
 
 @media screen and (max-width: 800px) {
-  .nav{
+  .nav {
     display: flex;
     flex-direction: column;
   }
@@ -157,16 +175,36 @@ nav input[type=checkbox]:checked ~ ul
   .nav input[type="text"] {
     border: 1px solid #ccc;
   }
+  header{
+    position: sticky;
+      top: 0;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .competence{
+      display: flex;
+      flex-direction: column;
+    }
+    .competence1{
+      display: flex;
+      flex-direction: column;
+    }
+    .competence2{
+      display: flex;
+      flex-direction: column;
+    }
+    .competence3{
+      display: flex;
+      flex-direction: column;
+    }
 }
 
-@media screen and (max-width: 800px){
-  #videoBG{
-    max-width: auto;
-    height: auto;
-    z-index: -100;
-  }
-
-  #logo-oli_dev{
+@media screen and (max-width: 800px) {
+  
+  #logo-oli_dev {
     display: none;
   }
 
@@ -175,20 +213,41 @@ nav input[type=checkbox]:checked ~ ul
     flex-wrap: wrap;
   }
 
-  .exp-pro { 
+  .exp-pro {
     margin: 40px;
   }
-  
-  .diplome { 
+
+  .diplome {
     margin: 40px;
   }
+  header{
+    position: sticky;
+      top: 0;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
   
+    .competence{
+      display: flex;
+      flex-direction: column;
+    }
+    .competence1{
+      display: flex;
+      flex-direction: column;
+    }
+    .competence2{
+      display: flex;
+      flex-direction: column;
+    }
+    .competence3{
+      display: flex;
+      flex-direction: column;
+    }
 }
 
 /* MAIN */
-
-
-
 
 .containerA {
   display: flex;
@@ -196,15 +255,13 @@ nav input[type=checkbox]:checked ~ ul
   display: flex;
   justify-content: center;
   z-index: 1;
-  
-
 }
 
-.containerA-1{
+.containerA-1 {
   display: flex;
   justify-content: center;
 }
-#logo-oli_dev{
+#logo-oli_dev {
   height: 350px;
   width: 350px;
 }
@@ -212,6 +269,8 @@ nav input[type=checkbox]:checked ~ ul
 .containerA-2 {
   text-align: center;
   padding: 40px;
+  background-color: #545454;
+  width: 500px;
 }
 
 .container3 {
@@ -232,41 +291,35 @@ nav input[type=checkbox]:checked ~ ul
   clip-path: ellipse(40% 50%);
   padding: 20px;
 }
-#body-presentation{
-  background: linear-gradient(to bottom right, #84DD75, white, #545454);
+#body-presentation {
+  
 }
-.containerB-1{
+.containerB-1 {
   margin: 40px;
 }
 
 .containerB-2 {
   display: flex;
   justify-content: space-between;
-  }
-.exp-pro { 
+}
+.exp-pro {
   margin: 40px;
 }
-.diplome { 
+.diplome {
   margin: 40px;
 }
 
-.bloc{
+.bloc {
   height: 100vh;
   width: 100%;
   position: relative;
-  
-}
-.bloc video {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.txt-presentation{
+.txt-presentation {
   font-size: 20px;
   line-height: 250%;
   color: #fff;
@@ -287,44 +340,63 @@ nav input[type=checkbox]:checked ~ ul
   justify-content: center;
 }
 
-.competence{
+.competence {
   display: flex;
   flex-direction: column;
 }
-.competence1{
+.competence1 {
   display: flex;
   justify-content: space-evenly;
 }
-.competence2{
+.competence2 {
   display: flex;
   justify-content: space-evenly;
 }
+.competence3{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
 
-
-
-#logo-html-css{
+#logo-html-css {
   height: 100px;
   width: 180px;
 }
-#logo-github{
+#logo-github {
   height: 100px;
   width: 190px;
 }
-#logo-mysql{
+#logo-mysql {
   height: 140px;
   width: 150px;
 }
-#logo-php{
+#logo-php {
   height: 100px;
   width: 150px;
 }
-#logo-g-suite{
+#logo-g-suite {
   height: 100px;
   width: 150px;
 }
-#logo-pack-office{
+#logo-pack-office {
   height: 100px;
   width: 230px;
+}
+
+#logo-trello{
+  height: 80px;
+  
+}
+
+#logo-procreate {
+  height: 100px;
+}
+
+#logo-figma{
+  height: 100px;
+}
+#logo-wamp{
+  height: 100px;
 }
 
 /* FOOTER */
@@ -337,12 +409,12 @@ nav input[type=checkbox]:checked ~ ul
   justify-content: space-evenly;
 }
 
-.footer1{
+.footer1 {
   text-align: center;
   line-height: 200%;
 }
 
-.footer2{
+.footer2 {
   text-align: center;
   line-height: 200%;
 }
@@ -351,30 +423,32 @@ nav input[type=checkbox]:checked ~ ul
   text-decoration: none;
   color: white;
 }
-#logo-github{
-  position: relative;
-  top: 0px;
-  left: -44px;
-  
+#logo-github {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
 }
-#logo-linkedin{
-  position: relative;
-  top: -33px;
-  left: 49px;
-  
+#logo-linkedin1 {
+  display: flex;
+  justify-content: flex-end;
+  width: fit-content;
+
 }
 
+.logo-footer{
+  display: flex;
+  justify-content: space-around;
+}
 
-.footer a:hover
-{
-  color: #84DD63;
+.footer a:hover {
+  color: #84dd63;
 }
 
 .footer1 .s-links a {
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   margin: 0 10px 10px 0;
   text-align: center;
   line-height: 40px;
@@ -383,9 +457,9 @@ nav input[type=checkbox]:checked ~ ul
   transition: all 0.5s ease;
 }
 
-.footer1 .s-links a:hover{
+.footer1 .s-links a:hover {
   color: #1c51d6;
-  background-color: #84DD63;
+  background-color: #84dd63;
 }
 
 

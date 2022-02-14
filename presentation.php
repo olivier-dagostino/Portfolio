@@ -102,8 +102,26 @@
                 <div><img id="logo-php" src="img/logo-php.png" alt="logo-php"></div>
             </div>
             <div class="competence2">
-                <div><img id="logo-pack-office" src="img/logo-packoffice-removebg-preview.png" alt="logo-pack-office"></div>
-                <div><img id="logo-g-suite" src="img/logo-g-suite.png" alt="logo-g-suite"></div>
+                <div>
+                    <img id="logo-pack-office" src="img/logo-packoffice-removebg-preview.png" alt="logo-pack-office">
+                </div>
+                <div>
+                    <img id="logo-g-suite" src="img/logo-g-suite.png" alt="logo-g-suite">
+                </div>
+                <div>
+                    <img id="logo-trello" src="img/trello.png" alt="">
+                </div>
+            </div>
+            <div class="competence3">
+                <div>
+                    <img id="logo-procreate" src="img/Procreate-logo.png" alt="">
+                </div>
+                <div>
+                    <img id="logo-figma" src="img/figma.png" alt="">
+                </div>
+                <div>
+                    <img id="logo-wamp" src="img/logo-wamp.png" alt="">
+                </div>
             </div>
         </div>
 
