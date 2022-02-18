@@ -13,10 +13,12 @@ body {
 
 h1 {
   font-size: xx-large;
-  margin: 30px;
+  margin: 40px;
+  padding: 40px;
   text-align: center;
   color: #fff;
 }
+
 
 h2 {
   font-size: x-large;
@@ -30,6 +32,12 @@ h3 {
   border-bottom: 3px solid #84dd63;
   width: 200px;
   line-height: 46px;
+  text-align: center;
+}
+
+h4{
+  
+  margin: 30px;
   text-align: center;
 }
 main {

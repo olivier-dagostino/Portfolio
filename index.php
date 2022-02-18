@@ -4,9 +4,7 @@
     <div class="containerA">
         <div class="bloc">
             <h1>Bienvenue</h1>
-            <div class="containerA-1">
-                <img id="logo-oli_dev" src="img/oli_dev (1500 x 1500 px).png" alt="logo-oli_dev">
-            </div>
+            
             <div class="containerA-2">
                 
                 <p class="txt-presentation">
