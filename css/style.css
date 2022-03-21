@@ -2,25 +2,21 @@
   margin: 0px;
   padding: 0px;
 }
-p {
-  text-align: center;
-  line-height: 200%;
-}
 
 body {
+  background-image: url("../img/Illustration_sans_titre 5.png");
+  background-size: cover;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-h1 {
-  font-size: xx-large;
-  margin: 40px;
-  padding: 40px;
-  text-align: center;
-  color: #fff;
+main {
+  z-index: -1;
 }
 
+p {
+  font-size: smaller;
+}
 
-h2 {
+/* h2 {
   font-size: x-large;
   margin: 30px;
   text-align: left;
@@ -35,30 +31,27 @@ h3 {
   text-align: center;
 }
 
-h4{
-  
+h4 {
   margin: 30px;
   text-align: center;
-}
-main {
-  background-image: url("../img/IMG_0047.JPG");
-  background-size: cover;
-  z-index: -1;
-}
+} */
 
-/* header */
+
+
+/* --------- HEADER --------- */
+
 header {
-  position: sticky;
   top: 0;
-  
   z-index: 1;
   display: flex;
   justify-content: center;
+  margin-top: 50px;
+  background-color: #fff;
+  position: sticky;
 }
 
 nav {
   width: 100%;
-  background-color: #545454;
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -101,7 +94,7 @@ nav a {
 
 nav > ul > li > a {
   padding: 0px 0px;
-  color: #fff;
+  color: black;
   margin: 20px 20px 20px 20px;
 }
 nav > ul > li > a:hover {
@@ -121,7 +114,7 @@ nav input[type="checkbox"]:checked ~ ul {
     text-align: center;
     padding: 12px;
   }
-  header{
+  header {
     width: 100%;
   }
   nav {
@@ -145,32 +138,31 @@ nav input[type="checkbox"]:checked ~ ul {
     padding: 10px 0px;
     text-align: center;
   }
-  header{
+  header {
     position: sticky;
-      top: 0;
-      z-index: 1;
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-  
-    .competence{
-      display: flex;
-      flex-direction: column;
-    }
-    .competence1{
-      display: flex;
-      flex-direction: column;
-    }
-    .competence2{
-      display: flex;
-      flex-direction: column;
-    }
-    .competence3{
-      display: flex;
-      flex-direction: column;
-    }
-  
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .competence {
+    display: flex;
+    flex-direction: column;
+  }
+  .competence1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .competence2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .competence3 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -183,35 +175,34 @@ nav input[type="checkbox"]:checked ~ ul {
   .nav input[type="text"] {
     border: 1px solid #ccc;
   }
-  header{
+  header {
     position: sticky;
-      top: 0;
-      z-index: 1;
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-  
-    .competence{
-      display: flex;
-      flex-direction: column;
-    }
-    .competence1{
-      display: flex;
-      flex-direction: column;
-    }
-    .competence2{
-      display: flex;
-      flex-direction: column;
-    }
-    .competence3{
-      display: flex;
-      flex-direction: column;
-    }
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .competence {
+    display: flex;
+    flex-direction: column;
+  }
+  .competence1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .competence2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .competence3 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 800px) {
-  
   #logo-oli_dev {
     display: none;
   }
@@ -228,65 +219,35 @@ nav input[type="checkbox"]:checked ~ ul {
   .diplome {
     margin: 40px;
   }
-  header{
+  header {
     position: sticky;
-      top: 0;
-      z-index: 1;
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-  
-    .competence{
-      display: flex;
-      flex-direction: column;
-    }
-    .competence1{
-      display: flex;
-      flex-direction: column;
-    }
-    .competence2{
-      display: flex;
-      flex-direction: column;
-    }
-    .competence3{
-      display: flex;
-      flex-direction: column;
-    }
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .competence {
+    display: flex;
+    flex-direction: column;
+  }
+  .competence1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .competence2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .competence3 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-/* MAIN */
 
-.containerA {
-  display: flex;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-}
 
-.containerA-1 {
-  display: flex;
-  justify-content: center;
-}
-#logo-oli_dev {
-  height: 350px;
-  width: 350px;
-}
-
-.containerA-2 {
-  text-align: center;
-  padding: 40px;
-  background-color: #545454;
-  width: 500px;
-}
-
-.container3 {
-  background-color: royalblue;
-  display: flex;
-  justify-content: space-around;
-  padding: 40px;
-}
 /* Img aperçu */
 #cv {
   width: 60%;
@@ -299,9 +260,8 @@ nav input[type="checkbox"]:checked ~ ul {
   clip-path: ellipse(40% 50%);
   padding: 20px;
 }
-#body-presentation {
-  
-}
+
+
 .containerB-1 {
   margin: 40px;
 }
@@ -330,8 +290,10 @@ nav input[type="checkbox"]:checked ~ ul {
 .txt-presentation {
   font-size: 20px;
   line-height: 250%;
-  color: #fff;
+  margin: 50px;
+  text-align: center;
 }
+
 .project1 {
   background-color: rgb(225, 65, 190);
   display: flex;
@@ -360,7 +322,7 @@ nav input[type="checkbox"]:checked ~ ul {
   display: flex;
   justify-content: space-evenly;
 }
-.competence3{
+.competence3 {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 50px;
@@ -391,84 +353,85 @@ nav input[type="checkbox"]:checked ~ ul {
   width: 230px;
 }
 
-#logo-trello{
+#logo-trello {
   height: 80px;
-  
 }
 
 #logo-procreate {
   height: 100px;
 }
 
-#logo-figma{
+#logo-figma {
   height: 100px;
 }
-#logo-wamp{
+#logo-wamp {
   height: 100px;
 }
+/* -------- SECTION 1 --------- */
 
-/* FOOTER */
-
-.footer {
-  margin: auto;
-  background-color: #545454;
-  width: 100%;
+.section1{
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
 }
 
-.footer1 {
+#titre-section1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 80px;
+  margin: 40px;
+  padding: 40px;
   text-align: center;
-  line-height: 200%;
+  margin-top: 70px
 }
 
-.footer2 {
+#avatar{
+  width: 150px;
+  position: absolute;
+  top: 200px;
+  left: 70px;
+}
+/* --------- FIN DE SECTION 1 --------- */
+
+/* -------- SECTION 2 --------- */
+
+.section2{
+  display: flex;
+  flex-direction: column;
+}
+
+#introduction{
   text-align: center;
-  line-height: 200%;
+  background-color:#fff;
+  width: 300px;
+  padding: 30px;
+  margin-left: 50px;
 }
 
-.footer a {
-  text-decoration: none;
-  color: white;
-}
-#logo-github {
+/* --------- FIN DE SECTION 2 --------- */
+
+
+
+
+/* --------- FOOTER --------- */
+
+footer {
+  background-color: #fff;
+  margin-top: 100px;
   display: flex;
-  justify-content: center;
-  width: fit-content;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
 }
-#logo-linkedin1 {
+
+footer > div {
+  margin-left: 10px;
+  margin-right: 10px;
   display: flex;
-  justify-content: flex-end;
-  width: fit-content;
-
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
 }
 
-.logo-footer{
-  display: flex;
-  justify-content: space-around;
+.titre-footer{
+  margin: 20px 0 20px 0px;
 }
-
-.footer a:hover {
-  color: #84dd63;
-}
-
-.footer1 .s-links a {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #ffffff;
-  transition: all 0.5s ease;
-}
-
-.footer1 .s-links a:hover {
-  color: #1c51d6;
-  background-color: #84dd63;
-}
-
-
-/*FIN FOOTER*/
+/* -------- FIN DU FOOTER --------- */

@@ -1,13 +1,8 @@
 <?php
 
 session_start();
-require('php/class/class_dbh.php');
-require('php/class/class_article.php');
-require('php/class/class_categorie.php');
-require('php/class/class_commentaire.php');
-require('php/class/class_droits.php');
-require('php/class/class_user.php');
 
+require('autoloader_process.php');
 
 $user = new User();
 $article = new Article();

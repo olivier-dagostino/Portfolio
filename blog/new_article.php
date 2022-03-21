@@ -48,7 +48,7 @@
 
             <h1>Création d'un Article</h1>
 
-            <form action="#"  method="POST" class="articlecreate">
+            <form action=""  method="POST" class="articlecreate">
 
                 <div class="containerA1">
 

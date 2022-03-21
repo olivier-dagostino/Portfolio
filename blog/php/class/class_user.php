@@ -1,6 +1,5 @@
 <?php
 
-
 class User extends Dbh
 {
   private $id;
@@ -12,25 +11,26 @@ class User extends Dbh
   public function register($login, $password, $email)
   {
 
+    try {
+
       $req = $this->connect()->prepare("SELECT * FROM `utilisateurs` WHERE login=?");
-	  
-      $req->execute(array($login));
-	
+      $req->execute();
+    } catch (Exception $e) {
+
+      echo 'Exception reçue : ', $e->getMessage(), "\n";
+    }
+
     $res = $req->fetch(PDO::FETCH_ASSOC);
     if ($res == false) {
 
       try {
 
         $sth = $this->connect()->prepare("INSERT INTO `utilisateurs` (`login`, `password`, `email`) VALUES (?,?,?)");
-		  
         $passwordprotect = password_hash($password, PASSWORD_DEFAULT);
-		  
         $sth->execute(array($login, $passwordprotect, $email));
-		  
         $confirmation = '<p>Bienvenue ' . $_POST['login'];
-		  
         echo $confirmation;
-        header('Refresh:3; URL=inscription.php');
+        header('Refresh:3; URL=connexion.php');
       } catch (Exception $e) {
 
         echo 'Exception reçue : ', $e->getMessage(), "\n";
@@ -45,7 +45,7 @@ class User extends Dbh
   public function login($login, $password)
   {
 
-    $sth = $this->connect()->prepare("SELECT * FROM `utilisateurs` WHERE `login` =?");
+    $sth = $this->connect()->prepare("SELECT * FROM `utilisateurs` WHERE `login` = ?");
     $sth->execute(array($login));
     $res = $sth->fetch(PDO::FETCH_ASSOC);
     
@@ -121,19 +121,28 @@ class User extends Dbh
     echo "<p>Modification prise en compte</p>";
   }
 
-  public function update($login, $password, $email, $id_utilisateur)
+  public function update($login, $password, $email)
   {
-	  $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
-	  
-	  $sth2 = $this->connect()->prepare("UPDATE utilisateurs SET login = :login, password = :password, email = :email WHERE utilisateurs.id = :id");
-		
-      $sth2->execute(array(
-		  ":login" => $login,
-		  ":password" => $hashedPwd,
-		  ":email" => $email,
-		  ":id" => $id_utilisateur));
-	  
-	   $_SESSION['login'] = $login;
+
+    $log = $_SESSION['login'];
+    $sth = $this->connect()->prepare("SELECT `id` FROM `utilisateurs` WHERE `login` = '$log' ");
+    $sth->execute();
+    $res = $sth->fetch(PDO::FETCH_ASSOC);
+    $this->login = $login;
+    $this->email = $email;
+    $this->password = $password;
+    $_SESSION['login'] = $login;
+    $id = $_SESSION['id'];
+
+    try {
+
+      $sth2 = $this->connect()->prepare("UPDATE `utilisateurs` SET `login` = ?,`password` = ?,`email` = ? WHERE `id` = '$id'");
+      $sth2->execute(array($login, password_hash($password, PASSWORD_DEFAULT), $email));
+      echo "<p>Modifications effectuées</p>";
+    } catch (Exception $e) {
+
+      echo 'Exception reçue : ', $e->getMessage(), "\n";
+    }
   }
 
 

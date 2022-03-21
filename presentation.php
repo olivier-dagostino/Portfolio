@@ -1,30 +1,30 @@
 <?php require 'header.php'; ?>
 
-<body id="body-presentation">
-    <div class="containerB">
+<body>
+   
+        <section class="section2">
 
-        <div class="containerB-1">
+        <p id="introduction">Je suis un jeune épicurien
+            de 30 ans, qui croque la vie à pleine dent,
+            aux tendances GlobeTrotter...<br>
+            J'ai un parcours assez atypique.
+            BAC PRO SEN (Systèmes électroniques
+            et Numériques) passé en 2011.<br>
+            Je travaillais dans la restauration
+            durant mes études, et je suis ensuite
+            partie à l'aventure durant presque
+            3 ans à Montréal à l'age de 20 ans.<br>
+            11 ans dans la restauration dans deux
+            pays différents. <br>
+            Cela fait déjà 4 ans que j'essai de
+            quitter la restauration, et depuis fin
+            septembre 2021, je suis entré à La
+            Plateforme Marseille afin de devenir
+            un développeur Web et Web Mobile.
+        </p>
+    </section>
 
-            <p>Je suis un jeune épicurien de bientôt
-                30 ans, qui croque la vie à pleine dent,
-                aux tendances GlobeTrotter...<br>
-                J'ai un parcours assez atypique.
-                BAC PRO SEN (Systèmes électroniques
-                et Numériques) passé en 2011.<br>
-                Je travaillais dans la restauration
-                durant mes études, et je suis ensuite
-                partie à l'aventure durant presque
-                3ans à Montréal à l'age de 20 ans.<br>
-                11 ans dans la restauration dans deux
-                pays différents. <br>
-                Cela fait déjà 4 ans que j'essai de
-                quitter la restauration, et depuis fin
-                septembre 2021, je suis entré à La
-                Plateforme Marseille afin de devenir
-                un développeur web FULLSTACK.
-            </p>
-
-        </div>
+        
 
         <h1>Mon Parcours</h1><br>
 

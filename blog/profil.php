@@ -45,33 +45,30 @@
                     echo "<p>Verifiez votre mot de passe</p> ";
 
                 } else {
-	
+
                     $update = new User();
-					
-                    $update->update($_POST['login'], $_POST['password'], $_POST['email'], $_SESSION['id']);
-					
-					echo "<p>Modifications effectuées</p>";
+                    $update->update($_POST['login'], $_POST['password'], $_POST['email']);
 
                 }
             }
             ?>
 
 
-            <form class="form-update-profil" name="update-profil" action="#" method="post">
+            <form class="form-update-profil" name="update-profil" action="" method="post">
 
                 <h2>Modifier votre Profil</h2>
 
                 <div class="form-update-profil-1">
 
                     <label for="login">Login</label>
-                    <input id="login" name="login" value="" type="text" placeholder="<?php echo $res1['login'] ?>" />
+                    <input id="login" name="login" value="<?php echo $res1['login'] ?>" type="text" placeholder="" />
 
                 </div>
 
                 <div class="form-update-profil-2">
 
                     <label for="email">Email</label>
-                    <input id="email" name="email" value="" type="text" placeholder="<?php echo $res1['email'] ?>" />
+                    <input id="email" name="email" value="<?php echo $res1['email'] ?>" type="text" placeholder="" />
 
                 </div>
 
@@ -98,7 +95,7 @@
 
                 <div class="form-update-profil-6">
 
-                    <input name="submit" type="submit" placeholder="Envoyer">
+                    <input name="env" type="submit" placeholder="Envoyer">
                     <input type="submit" name="delete" value="Supprimer Votre Compte">
 
                     <?php
