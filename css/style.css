@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("../img/Illustration_sans_titre 5.png");
+  background-image: url("../img/Illustration_sans_titre 3.png");
   background-size: cover;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -287,12 +287,7 @@ nav input[type="checkbox"]:checked ~ ul {
   align-items: center;
 }
 
-.txt-presentation {
-  font-size: 20px;
-  line-height: 250%;
-  margin: 50px;
-  text-align: center;
-}
+
 
 .project1 {
   background-color: rgb(225, 65, 190);
@@ -372,22 +367,34 @@ nav input[type="checkbox"]:checked ~ ul {
 .section1{
   display: flex;
   flex-direction: column;
+  
 }
 
 #titre-section1 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 80px;
+  font-size: 130px;
   margin: 40px;
   padding: 40px;
   text-align: center;
-  margin-top: 70px
+  margin-top: 70px;
+  color: #fff;
+  /* background-color: #ffffffb0; */
 }
 
 #avatar{
   width: 150px;
   position: absolute;
-  top: 200px;
-  left: 70px;
+  top: 185px;
+  left: 50px;
+}
+
+.txt-presentation {
+  font-size: 20px;
+  line-height: 250%;
+  padding: 50px;
+  margin: 50px;
+  text-align: center;
+  background-color: #ffffffb0;
 }
 /* --------- FIN DE SECTION 1 --------- */
 
@@ -396,15 +403,12 @@ nav input[type="checkbox"]:checked ~ ul {
 .section2{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-#introduction{
-  text-align: center;
-  background-color:#fff;
-  width: 300px;
-  padding: 30px;
-  margin-left: 50px;
-}
+
+
+
 
 /* --------- FIN DE SECTION 2 --------- */
 
