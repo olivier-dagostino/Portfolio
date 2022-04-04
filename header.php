@@ -22,8 +22,8 @@
             <input type="checkbox" id="menu-mobile" role="button">
             <ul>
                 <li><a href="index.php">Accueil</a><li>
-                <li><a href="presentation.php">Présentation</a></li>
-                <li><a href="projets.php">Projets</a></li>
+                <li><a href="#intro-container">Présentation</a></li>
+                <li><a href="#title-project">Projets</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
